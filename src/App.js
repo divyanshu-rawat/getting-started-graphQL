@@ -13,10 +13,14 @@ const client = new ApolloClient({
 
 const App = () => (
   <ApolloProvider client={client}>
-    <div>
-      <h2>My first Apollo app</h2>
+    <div className="container">
+      <nav className="navbar navbar-dark bg-primary">
+        <a className="navbar-brand" href="#">React and GraphQL - Sample Application</a>
+      </nav>
+      <div>
+        <Courses />
+      </div>
     </div>
   </ApolloProvider>
 );
-
 export default App;
