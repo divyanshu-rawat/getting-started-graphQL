@@ -3,19 +3,20 @@ import './App.css';
 
 
 import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+
 
 const client = new ApolloClient({
   uri: "https://vm8mjvrnv3.lp.gql.zone/graphql"
 });
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-       
-      </div>
-    );
-  }
-}
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>My first Apollo app</h2>
+    </div>
+  </ApolloProvider>
+);
 
 export default App;
