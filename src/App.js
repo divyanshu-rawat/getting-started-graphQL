@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Courses from './Courses';
 
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
